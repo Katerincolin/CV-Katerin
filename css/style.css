@@ -120,3 +120,42 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+@media (max-width: 768px) {
+  header {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    padding: 0.4rem 0.8rem;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  nav a:hover {
+    background-color: var(--morado-suave);
+    border-left: none;
+    border-bottom: 2px solid white;
+  }
+
+  main,
+  footer {
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+
+  .habilidades {
+    grid-template-columns: 1fr;
+  }
+}
